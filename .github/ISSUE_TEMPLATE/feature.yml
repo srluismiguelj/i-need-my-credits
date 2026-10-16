@@ -1,0 +1,15 @@
+name: Suggest an improvement
+description: Describe the task you want to do more easily.
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What are you trying to do?
+      description: Describe the problem, how often it happens, and your current workaround.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: What would make it easier?
+      description: Provider or feature suggestions are welcome. Do not share credentials or private data.

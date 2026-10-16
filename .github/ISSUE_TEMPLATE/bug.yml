@@ -1,0 +1,29 @@
+name: Report a problem
+description: Tell us what did not work, without private account information.
+body:
+  - type: markdown
+    attributes:
+      value: 'Do not include passwords, tokens, authorization links, conversations, or private screenshots.'
+  - type: input
+    id: version
+    attributes:
+      label: INMC version and macOS version
+      placeholder: 'INMC 0.3.51 · macOS 15 · Apple silicon'
+    validations:
+      required: true
+  - type: dropdown
+    id: provider
+    attributes:
+      label: Where did it happen?
+      options:
+        - Codex
+        - Claude Code
+        - Installer or update
+        - Other
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: What happened?
+      description: Steps, expected behavior, and the message displayed. Redact private information.
+    validations:
+      required: true
