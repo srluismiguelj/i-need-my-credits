@@ -1,10 +1,10 @@
 <p align="left"><img src="assets/icon.png" width="96" height="96" alt="I Need My Credits"></p>
 
-# I Need My Credits
+# I Need My Credits — AI usage monitor for Mac
 
 **Your ambition has no limits. Your plan does.**
 
-A free macOS menu bar app for keeping Codex and Claude Code plan usage in view. See remaining capacity and reset windows before starting your next task.
+A free macOS menu bar app to monitor **Codex and Claude Code usage**, remaining plan capacity and reset times. Know what is available before starting your next AI task.
 
 [Download for Mac](https://ineedmycredits.com/descargar) · [Latest release](https://github.com/srluismiguelj/i-need-my-credits/releases/latest) · [Setup guide](https://ineedmycredits.com/guia) · [Report an issue](https://github.com/srluismiguelj/i-need-my-credits/issues)
 
@@ -29,7 +29,7 @@ Know what’s left. Make your next move count.
 
 *Captured from the native macOS interface of version 0.3.51 in an isolated preview session. Quotas, reset counts and activity are example data, not live account readings. No personal account information is shown.*
 
-## What it does
+## Monitor Codex and Claude Code usage
 
 - Keeps available plan usage and reset times in your Mac menu bar.
 - Reads Codex from the account already signed in on your Mac.
@@ -49,6 +49,36 @@ No browser extension, INMC account or credit card is required. Your subscription
 Requires macOS 13 or later. Universal binary for Apple silicon and Intel; testing on physical Intel hardware remains pending. Windows and Linux are not supported.
 
 If you need help, use the app's **Suggest a feature** form or email **ineedmycredits.support@gmail.com**. Never send passwords, API keys, authorization links or private conversation histories.
+
+## Frequently asked questions
+
+### Does INMC give me AI credits?
+
+No. INMC shows available capacity from your compatible provider plan. It does not sell, add or refill credits. API billing, token activity and subscription plan limits are different measurements.
+
+### Do I need a browser extension or another account?
+
+No browser extension or INMC account is required. Codex uses the account signed in on your Mac. Claude Code is optional and requires a compatible account plus its official authorization flow.
+
+### Why does Claude say “Needs attention”?
+
+A missing or expired authorization needs a fresh sign-in. Choose **Retry connection** or **Connect Claude** in INMC and complete the official Claude Code flow. Being signed in to Claude web or Desktop alone does not establish this connection. [Connection troubleshooting](docs/TROUBLESHOOTING.md#claude-code-needs-attention).
+
+### What do the percentages and year-grid squares mean?
+
+The percentage is available plan capacity, not money. The annual grid shows recorded Codex token activity; neutral squares have no reading. A missing reading never means 100% remaining. [Understand the measurements](https://ineedmycredits.com/guia).
+
+### How do app updates work?
+
+INMC checks for a release at launch and periodically. You choose when to download and install. Official DMGs are signed, notarized and accompanied by SHA-256 checksums. [Install or update](https://ineedmycredits.com/descargar).
+
+## Help and reliability
+
+[Fix a connection or update](docs/TROUBLESHOOTING.md) · [Contact support](SUPPORT.md) · [Report a security issue privately](SECURITY.md)
+
+[![Public website and release checks](https://github.com/srluismiguelj/i-need-my-credits/actions/workflows/public-health.yml/badge.svg)](https://github.com/srluismiguelj/i-need-my-credits/actions/workflows/public-health.yml)
+
+Daily checks monitor the website, discovery files and agreement between GitHub releases and the app's update feed. A weekly check verifies every installer part and the complete SHA-256. These checks run on GitHub; they do not need your Mac to be on. [What is checked](docs/RELIABILITY.md).
 
 ## A small public experiment
 

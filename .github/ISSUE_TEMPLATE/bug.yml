@@ -8,7 +8,7 @@ body:
     id: version
     attributes:
       label: INMC version and macOS version
-      placeholder: 'INMC 0.3.51 · macOS 15 · Apple silicon'
+      placeholder: 'Version shown in the INMC footer · macOS version · Apple silicon or Intel'
     validations:
       required: true
   - type: dropdown

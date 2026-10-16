@@ -1,0 +1,21 @@
+# Availability and release checks
+
+The [Public health workflow](https://github.com/srluismiguelj/i-need-my-credits/actions/workflows/public-health.yml) runs on GitHub every day at approximately 13:17 UTC (08:17 Colombia time), after changes to the public hub, and on manual dispatch. GitHub may delay scheduled runs. Public-repository schedules can be disabled after extended inactivity; the separate INMC maintenance routine checks that the workflow remains enabled.
+
+## Daily
+
+- Public product, setup, download, release, idea and shortcut pages respond with their expected canonical and one main heading.
+- GitHub's latest stable version, installer size and SHA-256 agree with the website's update feed.
+- Robots, sitemap, llms.txt and representative Markdown remain available with the correct canonical/noindex policy.
+- The first and last installer fragments are available; their lengths are checked when the CDN exposes them in HEAD responses. This daily check does not prove the complete installer bytes.
+- README documentation links and all three screenshot assets exist.
+
+## Weekly and after a release
+
+Saturday's scheduled check also verifies all canonical sitemap pages, the Markdown references from llms.txt, every installer fragment, each fragment's SHA-256 and the complete assembled installer checksum. Maintainers can run the same full check with **Run workflow → Verify every installer part** after the website and GitHub release are both live.
+
+The workflow is read-only and uses GitHub's built-in repository-scoped token. It cannot release an app, change the website, read provider accounts or approve sign-in. It needs no extra personal token or signing certificate. Actions run status provides the result; notifications follow the owner's GitHub notification settings. A green badge represents the last completed run, not a real-time uptime guarantee or an SEO ranking.
+
+INMC's separate Codex maintenance routines inspect failed runs and can repair routine website/documentation issues. Native changes require actual compatibility tests, signing, notarization and release verification on the owner's Mac. Neither system silently installs updates on users' Macs.
+
+[Latest stable release](https://github.com/srluismiguelj/i-need-my-credits/releases/latest) · [Troubleshooting](TROUBLESHOOTING.md) · [Back](../README.md)
