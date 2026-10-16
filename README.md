@@ -6,7 +6,7 @@
 
 A free macOS menu bar app for keeping Codex and Claude Code plan usage in view. See remaining capacity and reset windows before starting your next task.
 
-[Download for Mac](https://ineedmycredits.com/descargar) · [Latest release](https://github.com/sr-luismiguelj/i-need-my-credits/releases/latest) · [Setup guide](https://ineedmycredits.com/guia) · [Report an issue](https://github.com/sr-luismiguelj/i-need-my-credits/issues)
+[Download for Mac](https://ineedmycredits.com/descargar) · [Latest release](https://github.com/srluismiguelj/i-need-my-credits/releases/latest) · [Setup guide](https://ineedmycredits.com/guia) · [Report an issue](https://github.com/srluismiguelj/i-need-my-credits/issues)
 
 ## What it does
 
