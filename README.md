@@ -17,7 +17,7 @@ A free macOS menu bar app for keeping Codex and Claude Code plan usage in view. 
 - Includes five quick shortcuts, useful task briefs and practical guides.
 - Keeps usage metrics on your Mac. Optional product usage reports are off until you choose to share them.
 
-No browser extension, INMC account or credit card is required. Your subscriptions to AI providers are separate. Missing or expired readings stay unavailable; they never become 100% available. Gemini and Grok are not monitored in this experiment.
+No browser extension, INMC account or credit card is required. Your subscriptions to AI providers are separate. Missing or expired readings stay unavailable; they never become 100% available.
 
 ## Install
 
