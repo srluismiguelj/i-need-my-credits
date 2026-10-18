@@ -115,7 +115,7 @@ export async function runHealth({ deep = false, fetchImpl = fetch, token = '' } 
     assert.equal(response.status, 200, 'GitHub release unavailable');
     validateRelease(manifest, await response.json());
   });
-  const paths = ['/', '/descargar', '/novedades', '/providers/codex', '/providers/claude', '/shortcuts', '/smarter-usage', '/ideas', '/es/descargar'];
+  const paths = ['/', '/descargar', '/novedades', '/providers/codex', '/providers/claude', '/shortcuts', '/smarter-usage', '/smarter-usage/alerts', '/es/smarter-usage/alerts', '/ideas', '/es/descargar'];
   for (const path of paths) await check(`Public page ${path}`, async () => {
     const html = await text(path); validateHtml(html, path);
     if (['/descargar', '/es/descargar'].includes(path)) assert.ok(html.includes(manifest?.version), 'Download page version differs');
@@ -135,7 +135,7 @@ export async function runHealth({ deep = false, fetchImpl = fetch, token = '' } 
   await check('AI-readable Markdown remains canonical and noindex', async () => {
     const llms = await text('/llms.txt');
     assert.ok(llms.includes(`https://github.com/${repository}`), 'Release hub missing from llms');
-    const paths = deep ? [...new Set([...llms.matchAll(/https:\/\/ineedmycredits\.com\/[^\s)]+\.md/g)].map(match => new URL(match[0]).pathname))] : ['/index.md', '/descargar.md', '/shortcuts.md'];
+    const paths = deep ? [...new Set([...llms.matchAll(/https:\/\/ineedmycredits\.com\/[^\s)]+\.md/g)].map(match => new URL(match[0]).pathname))] : ['/index.md', '/descargar.md', '/shortcuts.md', '/smarter-usage/alerts/index.md'];
     assert.ok(paths.length >= 3, 'Markdown links missing');
     for (const path of paths) {
       const response = await get(origin + path);

@@ -35,12 +35,15 @@ Know what’s left. Make your next move count.
 - Reads Codex from the account already signed in on your Mac.
 - Offers an optional Claude Code connection with explicit authorization. For personal accounts, this Claude Code connection requires Pro or Max; Claude Free chat cannot authorize it. Team or Enterprise access depends on the organization. Claude web and Desktop sign-in are separate.
 - Shows recorded Codex daily token activity in a year grid. Select a reported day to compare it with your recent average and get a practical tip. Tokens are not your remaining plan allowance.
+- Warns about low capacity, a sustained recent pace that could reach a limit, and low Codex capacity with no saved resets. Advice identifies the actual usage window and remains an estimate.
 - Includes five quick shortcuts, useful task briefs and practical guides.
 - Keeps usage metrics on your Mac. Optional product usage reports are off until you choose to share them.
 
 You can explore [copyable ideas](https://ineedmycredits.com/ideas) and [smarter habits](https://ineedmycredits.com/smarter-usage) without connecting an account.
 
 No browser extension, INMC account or credit card is required. Your subscriptions to AI providers are separate. Missing or expired readings stay unavailable; they never become 100% available.
+
+[Set up usage alerts](https://ineedmycredits.com/smarter-usage/alerts) for capacity, recent pace and resets. New installations start with all categories selected after macOS permission; saved off choices stay off on update. Local chat-attention setup is separate and depends on supported events and provider trust. INMC does not analyze your questions or change reasoning automatically.
 
 ## Install
 
@@ -72,7 +75,7 @@ The percentage is available plan capacity, not money. The annual grid shows reco
 
 ### How do app updates work?
 
-INMC checks for a release at launch and periodically. Version 0.3.54 adds a visible in-app update notice; system alerts depend on your macOS permission and notification preferences. You choose when to download and install. Official DMGs are signed, notarized and accompanied by SHA-256 checksums. [Install or update](https://ineedmycredits.com/descargar).
+INMC checks for a release at launch and periodically. A visible in-app update notice opens the verified download details; system alerts depend on your macOS permission and notification preferences. You choose when to download and install. Official DMGs are signed, notarized and accompanied by SHA-256 checksums. [Install or update](https://ineedmycredits.com/descargar).
 
 ## Help and reliability
 
