@@ -1,12 +1,21 @@
 <p align="left"><img src="assets/icon.png" width="96" height="96" alt="I Need My Credits"></p>
 
-# I Need My Credits — AI usage monitor for Mac
+# I Need My Credits — Codex & Claude Code usage monitor for Mac
 
 **Your ambition has no limits. Your plan does.**
 
-A free macOS menu bar app to monitor **Codex and Claude Code usage**, remaining plan capacity and reset times. Know what is available before starting your next AI task, then use a practical prompt to keep the work focused.
+A free macOS menu bar **usage monitor for Codex and Claude Code**. Check remaining plan capacity and reset times before your next task, get useful usage alerts, and keep your ambition moving. No browser extension or INMC account.
 
 [Download for Mac](https://ineedmycredits.com/descargar) · [Latest release](https://github.com/srluismiguelj/i-need-my-credits/releases/latest) · [Setup guide](https://ineedmycredits.com/guia) · [Report an issue](https://github.com/srluismiguelj/i-need-my-credits/issues)
+
+## Start with the tool you use
+
+| Your tool | Check usage now | Keep the reading in your menu bar |
+| --- | --- | --- |
+| Codex | Run `/status` in an active Codex CLI session, or open its official usage dashboard. | [Codex usage monitor and setup](https://ineedmycredits.com/providers/codex) |
+| Claude Code | Run `/usage`. Subscribers see plan usage bars; the Session cost estimate is separate. | [Claude Code usage monitor and setup](https://ineedmycredits.com/providers/claude) |
+
+INMC is free. Provider subscriptions are separate. For the Claude Code connection, personal accounts need **Pro or Max**; Claude Free chat cannot authorize it. Codex needs a compatible account signed in on your Mac. [Read the usage limits guide](docs/USAGE-LIMITS.md) to compare remaining capacity, used percentages and tokens correctly.
 
 ## The app, at a glance
 
