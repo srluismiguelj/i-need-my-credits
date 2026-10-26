@@ -48,7 +48,7 @@ Know what’s left. Make your next move count.
 - Includes five quick shortcuts, useful task briefs and practical guides.
 - Keeps usage metrics on your Mac. Optional product usage reports are off until you choose to share them.
 
-You can explore [copyable ideas](https://ineedmycredits.com/ideas) and [smarter habits](https://ineedmycredits.com/smarter-usage) without connecting an account.
+You can explore [copyable ideas](https://ineedmycredits.com/ideas) and [smarter habits](https://ineedmycredits.com/smarter-usage) without connecting an account. Start with [a website launch-readiness workflow](https://ineedmycredits.com/ideas/website-launch): a free copyable prompt, worked example and checks for what actually works.
 
 No browser extension, INMC account or credit card is required. Your subscriptions to AI providers are separate. Missing or expired readings stay unavailable; they never become 100% available.
 
