@@ -22,7 +22,7 @@ INMC is free. Provider subscriptions are separate. For the Claude Code connectio
 Know what’s left. Make your next move count.
 
 <p align="center">
-  <a href="assets/screenshots/monitor.jpg"><img src="assets/screenshots/monitor.jpg" width="440" alt="Native INMC monitor showing Codex and Claude Code remaining plan capacity and reset windows, with example data."></a>
+  <a href="assets/screenshots/monitor.jpg"><img src="assets/screenshots/monitor.jpg" width="440" alt="Native INMC 0.3.60 monitor with its compact brand header, Codex and Claude Code remaining plan capacity and reset windows; example data."></a>
 </p>
 
 <table>
@@ -36,7 +36,7 @@ Know what’s left. Make your next move count.
   </tr>
 </table>
 
-*Captured from the native macOS interface of version 0.3.51 in an isolated preview session. Quotas, reset counts and activity are example data, not live account readings. No personal account information is shown.*
+*Monitor: native macOS interface 0.3.60, including the compact header. Activity and shortcuts: native interface 0.3.51. Captured in isolated preview sessions; quotas, reset counts and activity are example data, not live account readings. No personal account information is shown. Click an image to view it at full size.*
 
 ## Monitor Codex and Claude Code usage
 
