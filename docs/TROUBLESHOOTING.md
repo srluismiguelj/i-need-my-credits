@@ -13,6 +13,18 @@ Expected result: INMC shows a current reading and its reset information. A token
 
 [Codex setup guide](https://ineedmycredits.com/providers/codex) · [Official Codex documentation](https://developers.openai.com/codex/)
 
+## Switching Codex accounts
+
+Use the current INMC release. From 0.3.63, INMC stays open when Codex signs out or a usage check is interrupted.
+
+1. Switch to the intended account in Codex and leave INMC open.
+2. Open the INMC monitor to check immediately. Background checks also detect the current session; interrupted checks retry automatically with a bounded backoff. Previous readings are hidden after a failed check.
+3. If it still needs attention, open Codex connection details, check **Account in Codex**, then choose **Reconnect to this account**. Finish any required sign-in in Codex.
+
+The available usage, resets and annual activity belong to the current detected account. A delayed response from a previous session is discarded. INMC does not sign you out of Codex or merge two accounts into one allowance.
+
+If the INMC menu-bar item really disappears on the latest release, report the INMC/macOS versions and the steps through private support. Include a sanitized macOS crash report if available; remove account details, tokens and personal paths. An unavailable provider reading should leave INMC running.
+
 ## Claude Code needs attention
 
 1. Confirm that your account can use Claude Code. Claude web and Desktop sign-in are separate from the official Claude Code connection used here.

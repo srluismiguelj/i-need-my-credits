@@ -78,6 +78,10 @@ No browser extension or INMC account is required. Codex uses the account signed 
 
 A missing or expired authorization needs a fresh sign-in. Choose **Retry connection** or **Connect Claude** in INMC and complete the official Claude Code flow. Being signed in to Claude web or Desktop alone does not establish this connection. [Connection troubleshooting](docs/TROUBLESHOOTING.md#claude-code-needs-attention).
 
+### Can I switch between two Codex accounts?
+
+Yes. From 0.3.63, switch accounts in Codex and keep INMC open. It checks the current session and retries interrupted connections automatically. If needed, open the Codex connection details and choose **Reconnect to this account** for the detected account. Previous readings are hidden after a failed check. [Account-switch troubleshooting](docs/TROUBLESHOOTING.md#switching-codex-accounts).
+
 ### What do the percentages and year-grid squares mean?
 
 The percentage is available plan capacity, not money. The annual grid shows recorded Codex token activity; neutral squares have no reading. A missing reading never means 100% remaining. [Understand the measurements](https://ineedmycredits.com/guia).
