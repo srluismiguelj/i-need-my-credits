@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: '24'
       - name: Test the monitor's failure and integrity checks
-        run: node --test tests/public-health.test.mjs
+        run: node --test tests/public-health.test.mjs tests/sparkle-health.test.mjs
       - name: Check live website, discovery and installer
         env:
           GITHUB_TOKEN: ${{ github.token }}

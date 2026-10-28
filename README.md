@@ -84,7 +84,7 @@ The percentage is available plan capacity, not money. The annual grid shows reco
 
 ### How do app updates work?
 
-INMC checks for a release at launch and periodically. A visible in-app update notice opens the verified download details; system alerts depend on your macOS permission and notification preferences. You choose when to download and install. Official DMGs are signed, notarized and accompanied by SHA-256 checksums. [Install or update](https://ineedmycredits.com/descargar).
+INMC checks for a release at launch and periodically. From 0.3.61 onward, the blue update button opens an integrated update: download, verification, installation and relaunch, powered by Sparkle. You choose when to install; connections and settings are kept. Both the update archive and release feed are signed. If you have 0.3.60 or earlier, use the signed DMG installer once to enable this flow. Initial installation still uses the DMG. System alerts respect your macOS permission and notification preferences. Official installers are signed, notarized and accompanied by SHA-256 checksums. [Install or update](https://ineedmycredits.com/descargar).
 
 ## Help and reliability
 

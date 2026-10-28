@@ -4,6 +4,7 @@ import { createHash } from 'node:crypto';
 import { appendFileSync, existsSync, readFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import {validateSignedFeed,validateArchiveSignature} from './sparkle-health.mjs';
 
 export const origin = 'https://ineedmycredits.com';
 export const repository = 'srluismiguelj/i-need-my-credits';
@@ -107,13 +108,30 @@ export async function runHealth({ deep = false, fetchImpl = fetch, token = '' } 
     assert.equal(response.status, 200, `${path}: HTTP ${response.status}`);
     return response.text();
   };
-  let manifest, sitemap;
+  let manifest, sitemap, publishedRelease;
   await check('Published installer manifest', async () => { manifest = validateManifest(JSON.parse(await text('/releases/latest.json'))); });
   await check('GitHub latest release agrees with website', async () => {
     assert.ok(manifest, 'Manifest check failed');
     const response = await get(`${api}/releases/latest`);
     assert.equal(response.status, 200, 'GitHub release unavailable');
-    validateRelease(manifest, await response.json());
+    publishedRelease=await response.json();
+    validateRelease(manifest, publishedRelease);
+  });
+  if(manifest && manifest.version.localeCompare('0.3.61',undefined,{numeric:true})>=0) await check('Signed Sparkle feed and update archive',async()=>{
+    const response=await get(origin+'/releases/appcast.xml');
+    assert.equal(response.status,200);assert.match(response.headers.get('x-robots-tag')??'',/noindex/);
+    const archive=validateSignedFeed(await response.text(),manifest.version);
+    const asset=publishedRelease?.assets?.find(item=>item.name===archive.name);
+    assert.ok(asset,'Sparkle GitHub asset missing');assert.equal(asset.size,archive.size);
+    assert.match(asset.digest??'',/^sha256:[a-f0-9]{64}$/);
+    if(deep){
+      // Public artifact only; never send API credentials through CDN redirects.
+      const download=await fetchImpl(archive.url,{redirect:'follow',signal:AbortSignal.timeout(180000)});
+      assert.equal(download.status,200);
+      const bytes=Buffer.from(await download.arrayBuffer());assert.equal(bytes.length,archive.size);
+      assert.equal('sha256:'+createHash('sha256').update(bytes).digest('hex'),asset.digest);
+      validateArchiveSignature(bytes,archive.signature);
+    }
   });
   const paths = ['/', '/descargar', '/novedades', '/providers/codex', '/providers/claude', '/shortcuts', '/smarter-usage', '/smarter-usage/alerts', '/es/smarter-usage/alerts', '/ideas', '/es/descargar'];
   for (const path of paths) await check(`Public page ${path}`, async () => {

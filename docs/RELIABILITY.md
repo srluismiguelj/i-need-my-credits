@@ -19,3 +19,7 @@ The workflow is read-only and uses GitHub's built-in repository-scoped token. It
 INMC's separate Codex maintenance routines inspect failed runs and can repair routine website/documentation issues. Native changes require actual compatibility tests, signing, notarization and release verification on the owner's Mac. Neither system silently installs updates on users' Macs.
 
 [Latest stable release](https://github.com/srluismiguelj/i-need-my-credits/releases/latest) · [Troubleshooting](TROUBLESHOOTING.md) · [Back](../README.md)
+
+## Integrated updates
+
+From 0.3.61, the monitor also checks the signed Sparkle appcast, its version and personal GitHub update asset. Full checks download the update-only ZIP, compare its size and GitHub SHA-256 and verify its Ed25519 signature. The updater itself requires signed feeds and signed archives before extraction, plus the application signature checks. Native signing keys stay in the owner’s Keychain and are never uploaded to Actions. These automated downloads are operational checks, not user installations.
