@@ -4,11 +4,13 @@
 
 **Your ambition has no limits. Your plan does.**
 
-**0.3.65 is available on [the website](https://ineedmycredits.com/descargar) and [GitHub](https://github.com/srluismiguelj/i-need-my-credits/releases/tag/v0.3.65).** Choose Update in INMC, then Install Update and Install and Relaunch. From 0.3.65, discovery and signed native installation use GitHub directly, independently of website hosting. For older versions, see [update troubleshooting](docs/TROUBLESHOOTING.md#integrated-update-did-not-complete).
+The Halloween footer now preserves the original artwork proportions and the approved navy fade.
+
+**0.3.66 is available on [the website](https://ineedmycredits.com/descargar) and [GitHub](https://github.com/srluismiguelj/i-need-my-credits/releases/tag/v0.3.66).** Choose Update in INMC, then Install Update and Install and Relaunch. From 0.3.65, discovery and signed native installation use GitHub directly, independently of website hosting. For older versions, see [update troubleshooting](docs/TROUBLESHOOTING.md#integrated-update-did-not-complete).
 
 A free macOS menu bar **usage monitor for Codex and Claude Code**. Check remaining plan capacity and reset times before your next task, get useful usage alerts, and keep your ambition moving. No browser extension or INMC account.
 
-[Download for Mac](https://github.com/srluismiguelj/i-need-my-credits/releases/download/v0.3.65/INeedMyCredits-0.3.65-universal.dmg) · [Latest release](https://github.com/srluismiguelj/i-need-my-credits/releases/latest) · [Setup guide](https://ineedmycredits.com/guia) · [Report an issue](https://github.com/srluismiguelj/i-need-my-credits/issues)
+[Download for Mac](https://github.com/srluismiguelj/i-need-my-credits/releases/download/v0.3.66/INeedMyCredits-0.3.66-universal.dmg) · [Latest release](https://github.com/srluismiguelj/i-need-my-credits/releases/latest) · [Setup guide](https://ineedmycredits.com/guia) · [Report an issue](https://github.com/srluismiguelj/i-need-my-credits/issues)
 
 ## Start with the tool you use
 
