@@ -4,11 +4,11 @@
 
 **Your ambition has no limits. Your plan does.**
 
-**0.3.64 is available on [GitHub](https://github.com/srluismiguelj/i-need-my-credits/releases/tag/v0.3.64).** It adds the approved seasonal satin footer. The website download and in-app update feed still offer 0.3.63 while their rollout is pending. [Download the signed 0.3.64 DMG](https://github.com/srluismiguelj/i-need-my-credits/releases/download/v0.3.64/INeedMyCredits-0.3.64-universal.dmg), or keep your current app if you want to wait for the integrated Update flow.
+**0.3.65 is available on [GitHub](https://github.com/srluismiguelj/i-need-my-credits/releases/tag/v0.3.65).** Update discovery and signed native installation now use GitHub directly, independently of website hosting. If you have 0.3.61–0.3.64, follow the [one-time in-app update setup](docs/TROUBLESHOOTING.md#use-the-github-update-channel-on-03610364) to update without the DMG. The website remains on 0.3.63 while its publication is pending.
 
 A free macOS menu bar **usage monitor for Codex and Claude Code**. Check remaining plan capacity and reset times before your next task, get useful usage alerts, and keep your ambition moving. No browser extension or INMC account.
 
-[Download for Mac](https://github.com/srluismiguelj/i-need-my-credits/releases/download/v0.3.64/INeedMyCredits-0.3.64-universal.dmg) · [Latest release](https://github.com/srluismiguelj/i-need-my-credits/releases/latest) · [Setup guide](https://ineedmycredits.com/guia) · [Report an issue](https://github.com/srluismiguelj/i-need-my-credits/issues)
+[Download for Mac](https://github.com/srluismiguelj/i-need-my-credits/releases/download/v0.3.65/INeedMyCredits-0.3.65-universal.dmg) · [Latest release](https://github.com/srluismiguelj/i-need-my-credits/releases/latest) · [Setup guide](https://ineedmycredits.com/guia) · [Report an issue](https://github.com/srluismiguelj/i-need-my-credits/issues)
 
 ## Start with the tool you use
 
@@ -90,9 +90,9 @@ The percentage is available plan capacity, not money. The annual grid shows reco
 
 ### How do app updates work?
 
-**Current rollout:** 0.3.64 is a direct GitHub release. The in-app feed remains on 0.3.63 until the website channel can be published. Nothing installs automatically.
+From **0.3.65**, INMC checks the personal GitHub release at launch and periodically. The blue update button opens Sparkle's native download, verification, installation and relaunch flow. You choose when to install; connections and settings are kept. Both the update feed and archive are signed. No GitHub account is needed, and updates do not depend on the website.
 
-INMC checks for a release at launch and periodically. From 0.3.61 onward, the blue update button opens an integrated update: download, verification, installation and relaunch, powered by Sparkle. You choose when to install; connections and settings are kept. Both the update archive and release feed are signed. If you have 0.3.60 or earlier, use the signed DMG installer once to enable this flow. Initial installation still uses the DMG. System alerts respect your macOS permission and notification preferences. Official installers are signed, notarized and accompanied by SHA-256 checksums. [Install or update](https://ineedmycredits.com/descargar).
+For **0.3.61–0.3.64**, use the [one-time GitHub feed setup](docs/TROUBLESHOOTING.md#use-the-github-update-channel-on-03610364), then open Settings → **Check for updates**. For **0.3.60 or earlier**, use the signed DMG installer once to enable integrated updates. Initial installation still uses the DMG. Nothing installs silently. System alerts respect macOS permission and saved notification preferences. Official installers are signed, notarized and accompanied by SHA-256 checksums.
 
 ## Help and reliability
 

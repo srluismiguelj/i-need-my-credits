@@ -43,6 +43,17 @@ export function validateRelease(manifest, release) {
   assert.ok(release.assets.some(item => item.name === `SHA256SUMS-${manifest.version}.txt`), 'Checksum file missing');
 }
 
+export function validateNativeManifest(manifest, release) {
+  assert.match(manifest.version ?? '', /^\d+\.\d+\.\d+$/);
+  assert.equal(manifest.distributionReady, true);
+  assert.deepEqual(manifest.parts, []);
+  assert.equal(manifest.downloadURL, `https://github.com/${repository}/releases/download/v${manifest.version}/INeedMyCredits-${manifest.version}-universal.dmg`);
+  assert.ok(Number.isSafeInteger(manifest.size) && manifest.size>0 && manifest.size<1024**3);
+  assert.match(manifest.sha256 ?? '', /^[a-f0-9]{64}$/);
+  validateRelease(manifest, release);
+  return manifest;
+}
+
 export function validateHtml(html, path) {
   assert.equal((html.match(/<h1(?:\s|>)/gi) ?? []).length, 1, `${path}: expected one H1`);
   const canonical = (html.match(/<link\b[^>]*>/gi) ?? []).find(tag => /\brel=["']canonical["']/i.test(tag));
@@ -131,6 +142,30 @@ export async function runHealth({ deep = false, fetchImpl = fetch, token = '' } 
       const bytes=Buffer.from(await download.arrayBuffer());assert.equal(bytes.length,archive.size);
       assert.equal('sha256:'+createHash('sha256').update(bytes).digest('hex'),asset.digest);
       validateArchiveSignature(bytes,archive.signature);
+    }
+  });
+  // The native channel can be healthy while an explicitly deferred website
+  // rollout remains behind. Keep the website agreement failure visible above.
+  if(publishedRelease?.assets?.some(asset=>asset.name==='latest.json')) await check('Independent signed native GitHub update channel',async()=>{
+    const assetText=async name=>{
+      const url=`https://github.com/${repository}/releases/latest/download/${name}`;
+      const response=await fetchImpl(url,{redirect:'follow',signal:AbortSignal.timeout(60000),headers:{'User-Agent':'INMC-Public-Health'}});
+      assert.equal(response.status,200,`Native ${name} unavailable`);
+      const body=await response.text();assert.ok(Buffer.byteLength(body)<3_000_000);
+      const expected=publishedRelease.assets.find(asset=>asset.name===name);
+      assert.ok(expected,`Native ${name} metadata missing`);
+      assert.equal(expected.size,Buffer.byteLength(body));
+      assert.equal(expected.digest,'sha256:'+createHash('sha256').update(body).digest('hex'));
+      return body;
+    };
+    const native=validateNativeManifest(JSON.parse(await assetText('latest.json')),publishedRelease);
+    const update=validateSignedFeed(await assetText('appcast.xml'),native.version);
+    const asset=publishedRelease.assets.find(asset=>asset.name===update.name);
+    assert.ok(asset);assert.equal(asset.size,update.size);assert.match(asset.digest??'',/^sha256:[a-f0-9]{64}$/);
+    if(deep){
+      const response=await fetchImpl(update.url,{redirect:'follow',signal:AbortSignal.timeout(240000)});
+      assert.equal(response.status,200);const bytes=Buffer.from(await response.arrayBuffer());assert.equal(bytes.length,asset.size);
+      assert.equal('sha256:'+createHash('sha256').update(bytes).digest('hex'),asset.digest);validateArchiveSignature(bytes,update.signature);
     }
   });
   const paths = ['/', '/descargar', '/novedades', '/providers/codex', '/providers/claude', '/shortcuts', '/smarter-usage', '/smarter-usage/alerts', '/es/smarter-usage/alerts', '/ideas', '/es/descargar'];

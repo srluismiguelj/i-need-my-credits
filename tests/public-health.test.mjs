@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
-import {origin, repository, request, validateManifest, validateRelease, validateHtml, verifyParts} from '../scripts/check-public-health.mjs';
+import {origin, repository, request, validateManifest, validateRelease, validateNativeManifest, validateHtml, verifyParts} from '../scripts/check-public-health.mjs';
 const bytes = Buffer.from('signed installer fixture');
 const sha = value => createHash('sha256').update(value).digest('hex');
 const manifest = () => ({version:'1.2.3', distributionReady:true, downloadURL:origin+'/downloads/INeedMyCredits-1.2.3-universal.dmg', size:bytes.length, sha256:sha(bytes), parts:[{path:'/release-parts/INeedMyCredits-1.2.3-universal.dmg/000.bin',size:bytes.length,sha256:sha(bytes)}]});
@@ -23,6 +23,13 @@ test('a 200 page with noindex or a different canonical fails', () => {
   assert.throws(()=>validateHtml(page,'/ideas'));
   assert.throws(()=>validateHtml(page+'<meta name="robots" content="noindex">','/'));
   assert.throws(()=>validateHtml(page+'<h1>Duplicate</h1>','/'));
+});
+test('the independent native channel is pinned to the matching public GitHub artifact and digest',()=>{
+  const m={...manifest(),parts:[],downloadURL:`https://github.com/${repository}/releases/download/v1.2.3/INeedMyCredits-1.2.3-universal.dmg`};
+  const r={tag_name:'v1.2.3',draft:false,prerelease:false,html_url:`https://github.com/${repository}/releases/tag/v1.2.3`,assets:[{name:'INeedMyCredits-1.2.3-universal.dmg',size:m.size,digest:'sha256:'+m.sha256},{name:'SHA256SUMS-1.2.3.txt'}]};
+  validateNativeManifest(m,r);
+  for(const patch of [{downloadURL:origin+'/downloads/INeedMyCredits-1.2.3-universal.dmg'},{downloadURL:m.downloadURL+'?redirect=evil'},{parts:manifest().parts},{distributionReady:false},{sha256:sha('different')},{size:m.size+1}])assert.throws(()=>validateNativeManifest({...m,...patch},r));
+  assert.throws(()=>validateNativeManifest(m,{...r,tag_name:'v1.2.2'}));
 });
 test('retry transient failures; authorization is never sent to the website', async () => {
   let calls=0, waits=0;
