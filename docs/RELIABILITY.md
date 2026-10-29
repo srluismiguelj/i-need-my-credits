@@ -23,3 +23,9 @@ INMC's separate Codex maintenance routines inspect failed runs and can repair ro
 ## Integrated updates
 
 From 0.3.61, the monitor also checks the signed Sparkle appcast, its version and personal GitHub update asset. Full checks download the update-only ZIP, compare its size and GitHub SHA-256 and verify its Ed25519 signature. The updater itself requires signed feeds and signed archives before extraction, plus the application signature checks. Native signing keys stay in the owner’s Keychain and are never uploaded to Actions. These automated downloads are operational checks, not user installations.
+
+## October 28, 2026: GitHub-first 0.3.64 rollout
+
+The owner authorized releasing the signed and notarized 0.3.64 app on GitHub before completing the website rollout. The website and signed in-app feed remain on 0.3.63. This is a known channel mismatch, not a claim that the integrated Update button already offers 0.3.64.
+
+The existing Public health agreement check will flag that mismatch until the channels converge. The check is intentionally retained; it must not be disabled or weakened to hide the rollout status. Direct GitHub artifact hashes and the signed 0.3.64 update archive are verified separately. Manual users should choose the versioned DMG; users waiting to test the integrated update can keep their installed app.

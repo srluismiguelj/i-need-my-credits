@@ -4,9 +4,11 @@
 
 **Your ambition has no limits. Your plan does.**
 
+**0.3.64 is available on [GitHub](https://github.com/srluismiguelj/i-need-my-credits/releases/tag/v0.3.64).** It adds the approved seasonal satin footer. The website download and in-app update feed still offer 0.3.63 while their rollout is pending. [Download the signed 0.3.64 DMG](https://github.com/srluismiguelj/i-need-my-credits/releases/download/v0.3.64/INeedMyCredits-0.3.64-universal.dmg), or keep your current app if you want to wait for the integrated Update flow.
+
 A free macOS menu bar **usage monitor for Codex and Claude Code**. Check remaining plan capacity and reset times before your next task, get useful usage alerts, and keep your ambition moving. No browser extension or INMC account.
 
-[Download for Mac](https://ineedmycredits.com/descargar) · [Latest release](https://github.com/srluismiguelj/i-need-my-credits/releases/latest) · [Setup guide](https://ineedmycredits.com/guia) · [Report an issue](https://github.com/srluismiguelj/i-need-my-credits/issues)
+[Download for Mac](https://github.com/srluismiguelj/i-need-my-credits/releases/download/v0.3.64/INeedMyCredits-0.3.64-universal.dmg) · [Latest release](https://github.com/srluismiguelj/i-need-my-credits/releases/latest) · [Setup guide](https://ineedmycredits.com/guia) · [Report an issue](https://github.com/srluismiguelj/i-need-my-credits/issues)
 
 ## Start with the tool you use
 
@@ -87,6 +89,8 @@ Yes. From 0.3.63, switch accounts in Codex and keep INMC open. It checks the cur
 The percentage is available plan capacity, not money. The annual grid shows recorded Codex token activity; neutral squares have no reading. A missing reading never means 100% remaining. [Understand the measurements](https://ineedmycredits.com/guia).
 
 ### How do app updates work?
+
+**Current rollout:** 0.3.64 is a direct GitHub release. The in-app feed remains on 0.3.63 until the website channel can be published. Nothing installs automatically.
 
 INMC checks for a release at launch and periodically. From 0.3.61 onward, the blue update button opens an integrated update: download, verification, installation and relaunch, powered by Sparkle. You choose when to install; connections and settings are kept. Both the update archive and release feed are signed. If you have 0.3.60 or earlier, use the signed DMG installer once to enable this flow. Initial installation still uses the DMG. System alerts respect your macOS permission and notification preferences. Official installers are signed, notarized and accompanied by SHA-256 checksums. [Install or update](https://ineedmycredits.com/descargar).
 
