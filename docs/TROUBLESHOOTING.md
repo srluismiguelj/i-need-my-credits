@@ -48,6 +48,10 @@ Open INMC Settings → **Check for updates**. If the running app retains the old
 
 After installing 0.3.65, both update availability and the native installer use GitHub by default. The older version's blue availability button also uses the restored website feed until this first update.
 
+## Read what changed in the installed version
+
+From **0.3.71**, click the version/Beta label in the footer. It opens that exact version’s release notes in the language selected in INMC. Hover shows **What’s new** / **Novedades**. This opens the public website only; it does not start an update or share provider readings. If the browser is offline, try again when connected.
+
 ## Integrated update did not complete
 
 From **0.3.70**, click the blue **Update** button and choose **Update** or **Cancel** in the confirmation. Only confirming starts the update. Progress stays inside the button; INMC verifies, installs and restarts automatically. Versions **0.3.68–0.3.69** use their existing direct button once to install this improvement. If it cannot finish, a short inline message lets you retry. Downloads can be cancelled before extraction; if restart is delayed, use the same button to retry it. macOS may still ask permission for protected installations. Your connections and settings are kept. In **0.3.65–0.3.67**, the blue button opens the existing native update window: choose **Install Update**, then **Install and Relaunch** once to install this improvement. If verification fails, cancel and retry on a stable connection; never disable macOS security or manually install an unverified archive. The signed DMG on the [personal GitHub release](https://github.com/srluismiguelj/i-need-my-credits/releases/latest) remains the recovery path.
