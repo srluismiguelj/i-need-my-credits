@@ -38,7 +38,7 @@ Expected result: a fresh authorized reading replaces the connection message. An 
 
 ## Use the GitHub update channel on 0.3.61–0.3.64
 
-These versions include Sparkle but originally read the website's update feed. While that website rollout is pending, select the official GitHub feed once in Terminal:
+These versions include Sparkle and read the website's signed update feed, which now offers the current release. Open INMC Settings → **Check for updates**. If discovery is still stuck, you can select the official GitHub feed once in Terminal:
 
 ```sh
 defaults write app.duetbar.mac SUFeedURL -string 'https://github.com/srluismiguelj/i-need-my-credits/releases/latest/download/appcast.xml'
@@ -46,13 +46,13 @@ defaults write app.duetbar.mac SUFeedURL -string 'https://github.com/srluismigue
 
 Open INMC Settings → **Check for updates**. If the running app retains the old preference, quit and reopen that same installed app, then check again. This opens the native update window; it does not require Finder or a DMG. You choose **Install Update**, then **Install and Relaunch**. This preference only changes the public feed location; signed-feed and archive validation stay enabled. No GitHub account or additional permission is required.
 
-After installing 0.3.65, both update availability and the native installer use GitHub by default. The older version's blue availability button may still reflect the website until this first update; use the Settings check for this bridge.
+After installing 0.3.65, both update availability and the native installer use GitHub by default. The older version's blue availability button also uses the restored website feed until this first update.
 
 ## Integrated update did not complete
 
 From 0.3.65, open the blue Update button again to return to the active update window. Choose **Install Update**, then **Install and Relaunch** when ready. Your connections and settings are kept. If verification fails, cancel and retry on a stable connection; never disable macOS security or manually install an unverified archive. The signed DMG on the [personal GitHub release](https://github.com/srluismiguelj/i-need-my-credits/releases/latest) remains the recovery path.
 
-For 0.3.61–0.3.64, use the one-time feed setup above. For 0.3.60 or earlier, use the DMG installer once to enable integrated updates. The website currently offers 0.3.63; GitHub is the current native release channel.
+For 0.3.61–0.3.64, use Settings → Check for updates; the one-time feed setup above is an optional recovery path. For 0.3.60 or earlier, use the DMG installer once to enable integrated updates. The website and GitHub now offer the same 0.3.65 release.
 
 ## First installation or DMG download did not complete
 

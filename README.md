@@ -4,7 +4,7 @@
 
 **Your ambition has no limits. Your plan does.**
 
-**0.3.65 is available on [GitHub](https://github.com/srluismiguelj/i-need-my-credits/releases/tag/v0.3.65).** Update discovery and signed native installation now use GitHub directly, independently of website hosting. If you have 0.3.61–0.3.64, follow the [one-time in-app update setup](docs/TROUBLESHOOTING.md#use-the-github-update-channel-on-03610364) to update without the DMG. The website remains on 0.3.63 while its publication is pending.
+**0.3.65 is available on [the website](https://ineedmycredits.com/descargar) and [GitHub](https://github.com/srluismiguelj/i-need-my-credits/releases/tag/v0.3.65).** Choose Update in INMC, then Install Update and Install and Relaunch. From 0.3.65, discovery and signed native installation use GitHub directly, independently of website hosting. For older versions, see [update troubleshooting](docs/TROUBLESHOOTING.md#integrated-update-did-not-complete).
 
 A free macOS menu bar **usage monitor for Codex and Claude Code**. Check remaining plan capacity and reset times before your next task, get useful usage alerts, and keep your ambition moving. No browser extension or INMC account.
 
