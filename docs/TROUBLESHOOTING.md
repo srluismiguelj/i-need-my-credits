@@ -52,7 +52,7 @@ After installing 0.3.65, both update availability and the native installer use G
 
 From **0.3.68**, click the blue **Update** button once. Progress stays inside the button; INMC verifies, installs and restarts automatically. If it cannot finish, a short inline message lets you retry. Downloads can be cancelled before extraction; if restart is delayed, use the same button to retry it. macOS may still ask permission for protected installations. Your connections and settings are kept. In **0.3.65–0.3.67**, the blue button opens the existing native update window: choose **Install Update**, then **Install and Relaunch** once to install this improvement. If verification fails, cancel and retry on a stable connection; never disable macOS security or manually install an unverified archive. The signed DMG on the [personal GitHub release](https://github.com/srluismiguelj/i-need-my-credits/releases/latest) remains the recovery path.
 
-For 0.3.61–0.3.64, use Settings → Check for updates; the one-time feed setup above is an optional recovery path. For 0.3.60 or earlier, use the DMG installer once to enable integrated updates. The website and GitHub now offer the same 0.3.68 release.
+For 0.3.61–0.3.64, use Settings → Check for updates; the one-time feed setup above is an optional recovery path. For 0.3.60 or earlier, use the DMG installer once to enable integrated updates. The website and GitHub offer the same current release; the public health workflow checks that they agree.
 
 ## First installation or DMG download did not complete
 
