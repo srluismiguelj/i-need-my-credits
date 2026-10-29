@@ -4,13 +4,13 @@
 
 **Your ambition has no limits. Your plan does.**
 
-The Halloween footer gives its ghost and pumpkin more breathing room, with original proportions, soft edges and the approved navy fade.
+A clearer Update button keeps progress in place and restarts INMC automatically after your click. The approved seasonal footer and your saved connections stay in place.
 
-**0.3.67 is available on [the website](https://ineedmycredits.com/descargar) and [GitHub](https://github.com/srluismiguelj/i-need-my-credits/releases/tag/v0.3.67).** Choose Update in INMC, then Install Update and Install and Relaunch. From 0.3.65, discovery and signed native installation use GitHub directly, independently of website hosting. For older versions, see [update troubleshooting](docs/TROUBLESHOOTING.md#integrated-update-did-not-complete).
+**0.3.68 is available on [the website](https://ineedmycredits.com/descargar) and [GitHub](https://github.com/srluismiguelj/i-need-my-credits/releases/tag/v0.3.68).** From 0.3.68, one click on the blue Update button shows progress in place, installs the signed update and restarts INMC. Older 0.3.61–0.3.67 apps use their existing Install Update / Install and Relaunch flow once to install this improvement. From 0.3.65, discovery and signed native installation use GitHub directly, independently of website hosting. For older versions, see [update troubleshooting](docs/TROUBLESHOOTING.md#integrated-update-did-not-complete).
 
 A free macOS menu bar **usage monitor for Codex and Claude Code**. Check remaining plan capacity and reset times before your next task, get useful usage alerts, and keep your ambition moving. No browser extension or INMC account.
 
-[Download for Mac](https://github.com/srluismiguelj/i-need-my-credits/releases/download/v0.3.67/INeedMyCredits-0.3.67-universal.dmg) · [Latest release](https://github.com/srluismiguelj/i-need-my-credits/releases/latest) · [Setup guide](https://ineedmycredits.com/guia) · [Report an issue](https://github.com/srluismiguelj/i-need-my-credits/issues)
+[Download for Mac](https://github.com/srluismiguelj/i-need-my-credits/releases/download/v0.3.68/INeedMyCredits-0.3.68-universal.dmg) · [Latest release](https://github.com/srluismiguelj/i-need-my-credits/releases/latest) · [Setup guide](https://ineedmycredits.com/guia) · [Report an issue](https://github.com/srluismiguelj/i-need-my-credits/issues)
 
 ## Start with the tool you use
 
@@ -92,7 +92,7 @@ The percentage is available plan capacity, not money. The annual grid shows reco
 
 ### How do app updates work?
 
-From **0.3.65**, INMC checks the personal GitHub release at launch and periodically. The blue update button opens Sparkle's native download, verification, installation and relaunch flow. You choose when to install; connections and settings are kept. Both the update feed and archive are signed. No GitHub account is needed, and updates do not depend on the website.
+From **0.3.68**, click the blue **Update** button once: progress stays inside the same button while Sparkle downloads, verifies, installs and automatically restarts INMC. No extra INMC confirmation window is needed. Your connections and settings are kept; macOS may still require permission for protected installs. **0.3.61–0.3.67** apps use their existing confirmation flow once to install this improvement. From **0.3.65**, INMC checks GitHub directly at launch and periodically. Both the update feed and archive remain signed. No GitHub account is needed, and updates do not depend on the website.
 
 For **0.3.61–0.3.64**, use the [one-time GitHub feed setup](docs/TROUBLESHOOTING.md#use-the-github-update-channel-on-03610364), then open Settings → **Check for updates**. For **0.3.60 or earlier**, use the signed DMG installer once to enable integrated updates. Initial installation still uses the DMG. Nothing installs silently. System alerts respect macOS permission and saved notification preferences. Official installers are signed, notarized and accompanied by SHA-256 checksums.
 
