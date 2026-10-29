@@ -2,7 +2,7 @@
 
 ## Current website and native channel alignment
 
-The [latest stable release](https://github.com/srluismiguelj/i-need-my-credits/releases/latest) and [website download](https://ineedmycredits.com/descargar) are checked for version and checksum agreement. From 0.3.68, the header Update button downloads, verifies, installs and restarts INMC with one click.
+The [latest stable release](https://github.com/srluismiguelj/i-need-my-credits/releases/latest) and [website download](https://ineedmycredits.com/descargar) are checked for version and checksum agreement. From 0.3.70, the header Update button first asks for Update or Cancel. Only confirming downloads, verifies, installs and restarts INMC, with progress in the same button. Versions 0.3.68–0.3.69 use their existing direct flow once to acquire it.
 
 On October28,2026, the canonical website and its signed update feed were brought into alignment with GitHub 0.3.65, inside the same Sites hosting platform. Native 0.3.65 continues to use GitHub directly; older Sparkle clients can also use the restored website feed. The original Site was retained as a separate rollback archive. The historical rollout mismatch below is resolved; all existing integrity and agreement checks remain enabled. No update was installed on the owner's Mac.
 
