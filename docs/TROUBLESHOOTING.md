@@ -50,7 +50,7 @@ After installing 0.3.65, both update availability and the native installer use G
 
 ## Read what changed in the installed version
 
-From **0.3.71**, click the version/Beta label in the footer. It opens that exact version’s release notes in the language selected in INMC. Hover shows **What’s new** / **Novedades**. This opens the public website only; it does not start an update or share provider readings. If the browser is offline, try again when connected.
+From **0.3.71**, click the version/Beta label in the footer. It opens that exact version’s release notes in the language selected in INMC. From **0.3.74**, this text link keeps its visible hover and keyboard-focus styling without a redundant floating tooltip. This opens the public website only; it does not start an update or share provider readings. If the browser is offline, try again when connected.
 
 ## Integrated update did not complete
 
