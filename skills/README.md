@@ -1,6 +1,6 @@
 # Free marketing, data and coding skills for Codex and Claude Code
 
-Pick a task and open its SKILL.md file. The guide links include copyable prompts, prerequisites and worked examples in English and Spanish.
+Run a skill in <img src="https://ineedmycredits.com/brand/codex.webp" width="18" height="18" alt=""> Codex or <img src="https://ineedmycredits.com/brand/claude.svg" width="18" height="18" alt=""> Claude Code. Pick a task and open its SKILL.md file. The guide links include copyable prompts, prerequisites and worked examples in English and Spanish.
 
 [Browse the web library](https://ineedmycredits.com/ideas?utm_source=github&utm_medium=referral&utm_campaign=inmc_skills) · [Biblioteca en español](https://ineedmycredits.com/es/ideas?utm_source=github&utm_medium=referral&utm_campaign=inmc_skills)
 
@@ -23,24 +23,24 @@ On Mac, [I Need My Credits](https://ineedmycredits.com/descargar?utm_source=gith
 
 ## SEO
 
-- [Find pages to refresh](inmc-search-console-content-refresh/SKILL.md). Compare two Search Console periods and turn one drop into a brief you can verify. [Example and prompt](https://ineedmycredits.com/ideas/search-console-content-refresh) · [Español](https://ineedmycredits.com/es/ideas/search-console-content-refresh)
+- [Find pages to refresh](inmc-search-console-content-refresh/SKILL.md). Compare two exports from <img src="https://ineedmycredits.com/brand/google-search-console.png" width="18" height="18" alt=""> Google Search Console and turn one drop into a brief you can verify. [Example and prompt](https://ineedmycredits.com/ideas/search-console-content-refresh) · [Español](https://ineedmycredits.com/es/ideas/search-console-content-refresh)
 - [Map internal links](inmc-seo-internal-link-map/SKILL.md). Find three useful links between pages that already exist. [Example and prompt](https://ineedmycredits.com/ideas/seo-internal-link-map) · [Español](https://ineedmycredits.com/es/ideas/seo-internal-link-map)
-- [Build an SEO brief](inmc-seo-content-brief/SKILL.md). Combine public updates, Trends and your own signals. Decide whether to create, refresh or skip. [Example and prompt](https://ineedmycredits.com/ideas/seo-content-brief-automation) · [Español](https://ineedmycredits.com/es/ideas/seo-content-brief-automation)
+- [Build an SEO brief](inmc-seo-content-brief/SKILL.md). Combine public updates, <img src="https://ineedmycredits.com/brand/google-trends.ico" width="18" height="18" alt=""> Google Trends and your own signals. Decide whether to create, refresh or skip. [Example and prompt](https://ineedmycredits.com/ideas/seo-content-brief-automation) · [Español](https://ineedmycredits.com/es/ideas/seo-content-brief-automation)
 
 ## Growth
 
-- [Design a growth experiment](inmc-growth-funnel-experiment/SKILL.md). Use comparable funnel data to pick one bottleneck, one change and one success metric. [Example and prompt](https://ineedmycredits.com/ideas/growth-funnel-experiment) · [Español](https://ineedmycredits.com/es/ideas/growth-funnel-experiment)
+- [Design a growth experiment](inmc-growth-funnel-experiment/SKILL.md). Use comparable funnel counts from <img src="https://ineedmycredits.com/brand/google-analytics.svg" width="18" height="18" alt=""> Google Analytics (GA4) or a CSV to pick one bottleneck, one change and one success metric. [Example and prompt](https://ineedmycredits.com/ideas/growth-funnel-experiment) · [Español](https://ineedmycredits.com/es/ideas/growth-funnel-experiment)
 - [Audit landing-page message match](inmc-landing-page-message-match/SKILL.md). Spot where a landing page stops delivering the promise that earned the click. [Example and prompt](https://ineedmycredits.com/ideas/landing-page-message-match) · [Español](https://ineedmycredits.com/es/ideas/landing-page-message-match)
 
 ## Analytics and reporting
 
-- [Build UTM campaign links](inmc-utm-campaign-link-builder/SKILL.md). Tag one campaign consistently across channels and check the URLs before publishing. [Example and prompt](https://ineedmycredits.com/ideas/utm-campaign-link-builder) · [Español](https://ineedmycredits.com/es/ideas/utm-campaign-link-builder)
+- [Build UTM campaign links](inmc-utm-campaign-link-builder/SKILL.md). Create links with consistent tags for <img src="https://ineedmycredits.com/brand/google-analytics.svg" width="18" height="18" alt=""> Google Analytics (GA4) and check them before publishing. [Example and prompt](https://ineedmycredits.com/ideas/utm-campaign-link-builder) · [Español](https://ineedmycredits.com/es/ideas/utm-campaign-link-builder)
 - [Audit a conversion rate](inmc-csv-audit/SKILL.md). Catch duplicate batches, missing counts and invalid denominators in a practice CSV. [Example and prompt](https://ineedmycredits.com/ideas/csv-conversion-audit) · [Español](https://ineedmycredits.com/es/ideas/csv-conversion-audit)
-- [Write a weekly KPI brief](inmc-weekly-marketing-kpi-brief/SKILL.md). Explain one meaningful change with comparable numbers and a next action. [Example and prompt](https://ineedmycredits.com/ideas/weekly-marketing-kpi-brief) · [Español](https://ineedmycredits.com/es/ideas/weekly-marketing-kpi-brief)
+- [Write a weekly KPI brief](inmc-weekly-marketing-kpi-brief/SKILL.md). Use <img src="https://ineedmycredits.com/brand/google-analytics.svg" width="18" height="18" alt=""> Google Analytics (GA4) or CSV totals to explain one meaningful change and suggest a next action. [Example and prompt](https://ineedmycredits.com/ideas/weekly-marketing-kpi-brief) · [Español](https://ineedmycredits.com/es/ideas/weekly-marketing-kpi-brief)
 
 ## Paid media
 
-- [Review Google Ads search terms](inmc-google-ads-search-terms-audit/SKILL.md). Find irrelevant spend and flag terms that need more evidence. [Example and prompt](https://ineedmycredits.com/ideas/google-ads-search-terms-audit) · [Español](https://ineedmycredits.com/es/ideas/google-ads-search-terms-audit)
+- [Review Google Ads search terms](inmc-google-ads-search-terms-audit/SKILL.md). Inspect a <img src="https://ineedmycredits.com/brand/google-ads.svg" width="18" height="18" alt=""> Google Ads export to find irrelevant spend and flag terms that need more evidence. [Example and prompt](https://ineedmycredits.com/ideas/google-ads-search-terms-audit) · [Español](https://ineedmycredits.com/es/ideas/google-ads-search-terms-audit)
 
 ## Market research
 
@@ -49,7 +49,7 @@ On Mac, [I Need My Credits](https://ineedmycredits.com/descargar?utm_source=gith
 
 ## Content
 
-- [Turn one guide into two posts](inmc-repurpose-guide-into-social-posts/SKILL.md). Extract one useful example and adapt the hook to each channel. [Example and prompt](https://ineedmycredits.com/ideas/repurpose-guide-into-social-posts) · [Español](https://ineedmycredits.com/es/ideas/repurpose-guide-into-social-posts)
+- [Turn one guide into two posts](inmc-repurpose-guide-into-social-posts/SKILL.md). Adapt one example for LinkedIn and <img src="https://ineedmycredits.com/brand/instagram-black.svg#gh-light-mode-only" width="18" height="18" alt=""> Instagram in the practice exercise. [Example and prompt](https://ineedmycredits.com/ideas/repurpose-guide-into-social-posts) · [Español](https://ineedmycredits.com/es/ideas/repurpose-guide-into-social-posts)
 
 ## Onboarding
 
