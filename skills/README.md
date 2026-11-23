@@ -1,8 +1,15 @@
-# Free marketing and analytics skills for Codex and Claude Code
+# Free marketing, data and coding skills for Codex and Claude Code
 
 Pick a task and open its SKILL.md file. The guide links include copyable prompts, prerequisites and worked examples in English and Spanish.
 
 [Browse the web library](https://ineedmycredits.com/ideas?utm_source=github&utm_medium=referral&utm_campaign=inmc_skills) · [Biblioteca en español](https://ineedmycredits.com/es/ideas?utm_source=github&utm_medium=referral&utm_campaign=inmc_skills)
+
+## Coding and campaign data
+
+- [Understand an unfamiliar codebase](inmc-explain-an-unfamiliar-codebase/SKILL.md). Pick one visible result and trace the code that produces it. Get a short reading order, file and function references, and an input you can check yourself. [Example and prompt](https://ineedmycredits.com/ideas/explain-an-unfamiliar-codebase?utm_source=github&utm_medium=referral&utm_campaign=inmc_skills) · [Español](https://ineedmycredits.com/es/ideas/explain-an-unfamiliar-codebase?utm_source=github&utm_medium=referral&utm_campaign=inmc_skills)
+- [Merge two campaign CSV files](inmc-merge-csv-files-different-columns/SKILL.md). Map equivalent columns, stack both exports and reconcile each campaign-day. Keep conflicting counts in a separate table before you total clicks. [Example and prompt](https://ineedmycredits.com/ideas/merge-csv-files-different-columns?utm_source=github&utm_medium=referral&utm_campaign=inmc_skills) · [Español](https://ineedmycredits.com/es/ideas/merge-csv-files-different-columns?utm_source=github&utm_medium=referral&utm_campaign=inmc_skills)
+- [Hand off a coding session](inmc-codex-claude-session-handoff/SKILL.md). Give the next session a short note with the goal, changed files, last verified result and one next check. It can pick up the work in the same project. [Example and prompt](https://ineedmycredits.com/ideas/codex-claude-session-handoff?utm_source=github&utm_medium=referral&utm_campaign=inmc_skills) · [Español](https://ineedmycredits.com/es/ideas/codex-claude-session-handoff?utm_source=github&utm_medium=referral&utm_campaign=inmc_skills)
+- [Verify a bug fix](inmc-verify-a-bug-fix/SKILL.md). Run the same behavior check before and after a fix. Record what failed, what changed and whether a nearby case still works. [Example and prompt](https://ineedmycredits.com/ideas/verify-a-bug-fix?utm_source=github&utm_medium=referral&utm_campaign=inmc_skills) · [Español](https://ineedmycredits.com/es/ideas/verify-a-bug-fix?utm_source=github&utm_medium=referral&utm_campaign=inmc_skills)
 
 ## Use a skill in a project
 

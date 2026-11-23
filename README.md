@@ -21,6 +21,10 @@ A free macOS menu bar **usage monitor for Codex and Claude Code**. Check remaini
 
 INMC is free. Provider subscriptions are separate. For the Claude Code connection, personal accounts need **Pro or Max**; Claude Free chat cannot authorize it. Codex needs a compatible account signed in on your Mac. [Read the usage limits guide](docs/USAGE-LIMITS.md) to compare remaining capacity, used percentages and tokens correctly.
 
+## Try a free skill
+
+[Understand an unfamiliar repository](skills/inmc-explain-an-unfamiliar-codebase/SKILL.md), [hand a session from Codex to Claude Code](skills/inmc-codex-claude-session-handoff/SKILL.md), [check a bug fix](skills/inmc-verify-a-bug-fix/SKILL.md) or [merge two campaign CSVs](skills/inmc-merge-csv-files-different-columns/SKILL.md). Each includes a practice input and an expected result. [Browse all skills and bilingual examples](https://ineedmycredits.com/ideas?utm_source=github&utm_medium=referral&utm_campaign=inmc_skills).
+
 ## The app, at a glance
 
 Know what’s left. Make your next move count.
