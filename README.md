@@ -23,6 +23,8 @@ INMC is free. Provider subscriptions are separate. For the Claude Code connectio
 
 ## Try a free skill
 
+In INMC 0.3.81 and later, open **Skills** below your plan usage. Choose Codex or Claude Code, then scroll through the tasks and see what each produces. Open a card to copy the prompt or follow the worked example. The app’s [latest release notes](https://ineedmycredits.com/novedades) show where to find it.
+
 [Understand an unfamiliar repository](skills/inmc-explain-an-unfamiliar-codebase/SKILL.md), [hand a session from Codex to Claude Code](skills/inmc-codex-claude-session-handoff/SKILL.md), [check a bug fix](skills/inmc-verify-a-bug-fix/SKILL.md) or [merge two campaign CSVs](skills/inmc-merge-csv-files-different-columns/SKILL.md). Each includes a practice input and an expected result. [Browse all skills and bilingual examples](https://ineedmycredits.com/ideas?utm_source=github&utm_medium=referral&utm_campaign=inmc_skills).
 
 ## The app, at a glance
